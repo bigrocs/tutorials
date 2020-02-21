@@ -34,13 +34,13 @@ stages:
       name: etcd-operator
       targetNamespace: srv
 ```
-#### 安装nat
-（[nats](https://github.com/nats-io/nats-server)）
+#### 安装nat（[nats](https://github.com/nats-io/nats-server)）
 ```
 # 暂无安装后续完善
 ```
 
 ### 部署服务
+
 这是微服务的k8s部署示例
 ```
 # etcd-cluster-client.srv 注意: srv 为 etcd 服务所在命名空间
@@ -99,6 +99,7 @@ spec:
 ```
 ## MicroAPI
 要部署Micro API，请使用以下配置。
+
 创建api服务
 ```
 apiVersion: v1
