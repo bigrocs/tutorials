@@ -5,8 +5,7 @@
    在kubernetes上，我们建议运行[etcd](https://github.com/etcd-io/etcd)和[nats](https://github.com/nats-io/nats-server)。
         - Etcd用于高度可扩展的服务发现
         - NATS用于异步消息传递
-#### 要安装etcd
-（[说明](https://github.com/helm/charts/tree/master/stable/etcd-operator)）
+#### 要安装etcd（[说明](https://github.com/helm/charts/tree/master/stable/etcd-operator)）
 ```
 # 注意命名空间 【会在后面微服务利用用到】
 helm install --namespace ${namespace} --name ${appName} --set customResources.createEtcdClusterCRD=true stable/etcd-operator
