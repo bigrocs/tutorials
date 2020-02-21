@@ -7,7 +7,7 @@
         - NATS用于异步消息传递
 #### 要安装etcd（[说明](https://github.com/helm/charts/tree/master/stable/etcd-operator)）
 ```
-# 注意命名空间 【会在后面微服务利用用到】
+# 注意命名空间 【后面微服务会用到】
 helm install --namespace ${namespace} --name ${appName} --set customResources.createEtcdClusterCRD=true stable/etcd-operator
 
 # to later uninstall etcd
@@ -21,7 +21,7 @@ helm delete etcd-operator
 
 ```
 ```
-# rancher 可以去应用商品安装
+# rancher 可以去应用商店安装
 # rancher 流水线 代码
 stages:
 - name: Etcd
