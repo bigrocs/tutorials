@@ -84,11 +84,11 @@ spec:
             value: "etcd-cluster-client.srv" # 注意 etcd 命名空间 srv
         - name: health
           command: [
-		"/health",
+		      "/health",
                 "--health_address=0.0.0.0:8081",
-		"--server_name=greeter",
-		"--server_address=0.0.0.0:8080"
-	  ]
+          "--server_name=greeter",
+          "--server_address=0.0.0.0:8080"
+          ]
           image: microhq/health
           livenessProbe:
             httpGet:
